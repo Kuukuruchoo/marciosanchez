@@ -1,0 +1,85 @@
+@media (max-width: 1300px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header {
+        width: 100%;
+    }
+    .totalLayout {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+    }
+
+    .info {
+        margin-bottom: 20px;
+    }
+
+    .digitalMind, .cursosDigitales, .BAMultiplica {
+        display: flex;
+        justify-content: space-around;
+        height: 490px;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 20px; /* Espacio entre las secciones */
+    }
+
+    .curriculum {
+        position: relative;
+        padding-bottom: 30px;
+    }
+}
+
+@media (max-width: 780px){
+    body {
+        background-image: url(../img/fondo.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed; /* Opcional: fija la imagen al desplazarse */
+    }
+
+    .Mar {
+        font-size: 25px;
+        padding-left: 20px;
+    }
+
+    .media780 {
+        margin: 0 50px 0 50px;
+        padding: 0 20px 0 20px;
+        height: 1500px;
+    }
+
+    .totalLayout {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: auto;
+        background-color: rgba(0, 0, 0, 80%);
+    }
+
+    .digitalMind {
+        margin-left: 20px;
+    }
+    .cursosDigitales {
+        height: 600px;
+    }
+
+    .textMain {
+        text-align: center;
+    }
+
+    video {
+        display: none;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .curriculum, .buttonCurriculum {
+        max-width: 200px;
+    }
+}
+ 

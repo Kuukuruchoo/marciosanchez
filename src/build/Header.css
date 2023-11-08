@@ -1,0 +1,36 @@
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    height: 74px;
+    border-bottom: solid #3DD52E;
+}
+
+main {
+    padding-top: 10px;
+    height: 70px;
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+}
+
+.Mar {
+    color: white;
+    text-decoration: none;
+    font-family: 'Ysabeau SC', sans-serif;
+}
+
+.icon-bar {
+    position: absolute;
+    left: 0;
+    background-color: transparent;
+    border: none;
+    margin-top: 10px;
+    margin-left: 0;
+}
+
+.icon {
+    height: 50px;
+    width: auto;
+}

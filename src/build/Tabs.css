@@ -1,0 +1,232 @@
+.textoCentro {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.tabs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+
+.buttons {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 10px;
+}
+
+.buttonServicios, .buttonClientes, .buttonAcerca {
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    height: 40px;
+    width: 120px;
+    cursor: pointer;
+    background-color: #3DD52E;
+    border: none;
+}
+
+.buttonServicios:hover, .buttonClientes:hover, .buttonAcerca:hover {
+    transition: .3s;
+    color: white;
+    height: 45px;
+    width: 130px;
+}
+
+
+.servicios {
+    margin-top: 200px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+
+.developer, .desarrollo, .diseño, .tool {
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.desarrollo, 
+.diseño, 
+.tool {
+    margin-top: 30px;
+}
+
+/*PARA TODO DE LA NAVEGACION*/
+
+.textPages {
+    color: white;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+.acercaDeMi {
+    margin-top: 170px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gmail,
+.whatsapp,
+.instagram {
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.whatsapp,
+.instagram {
+    margin-top: 30px;
+}
+
+.clientes {
+    margin-top: 200px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.AEJBA {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.textAEJBA {
+    display: flex;
+    flex-direction: column;
+}
+
+.texto, .texto2 {
+    color: white;
+    padding-left: 10px;
+    height: 15px;
+}
+
+.texto {
+    margin-top: 5px;
+}
+
+.texto2 {
+    margin-top: 0;
+}
+
+.formularioContacto {
+    padding: 2rem;
+    border-radius: 10px;
+}
+.formulario legend {
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    margin-bottom: 2rem;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.contenedor-campos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.campo {
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.campo label {
+    color: white;
+    font-weight: 700;
+    margin-bottom: .5rem;
+    display: block;
+}
+
+.campo input[type="text"],
+.campo input[type="tel"],
+.campo input[type="mail"],
+.campo textarea {
+    width: 100%;
+    padding: .5rem;
+    border: solid white;
+    border-radius: .5rem;
+    background-color: black;
+    color: white;
+}
+
+.formulario input::placeholder {
+    color: white;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+    outline: none;
+}
+
+.w-100{
+    flex: 0 0 100%;
+}
+.campo textarea {
+    height: 100px;
+}
+
+.enviar {
+    display: flex;
+    justify-content: center;
+}
+
+.boton {
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    height: 30px;
+    width: 100px;
+    cursor: pointer;
+    background-color: #3DD52E;
+    border: none;
+}
+
+.boton:hover {
+    transition: .2s;
+    color: white;
+    height: 35px;
+    width: 115px;
+}
+
+.pie {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+}
+
+/*Script*/
+
+.open {
+    display: block;
+}
+
+.Noopen {
+    display: none;
+}
+

@@ -1,0 +1,163 @@
+@media (max-width: 1300px) {
+    body {
+        background-image: url(../img/fondo.jpg);
+    }
+    .center {
+        display: flex;
+        flex-direction: column;
+    }
+    .textoCentro {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        margin: 0 20% 0 20%;
+    }
+    .fondo {
+        display: none;
+    }
+
+    .tabs {
+        position: relative;
+    }
+
+    .text {
+        width: 500px;
+        text-align: center;
+    }
+
+    .servicios, 
+    .clientes,
+    .acercaDeMi {
+        margin-top: 10px;
+    }
+
+    .formularioContacto {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .pie {
+        position: static;
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 780px){
+    body {
+        background-image: url(../img/fondo.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed; /*Fija la imagen al desplazarse */
+    }
+
+    .fondo {
+        display: none;
+    }
+
+    header {
+        width: 100%;
+        height: auto;
+    }
+
+    main {
+        text-align: center;
+    }
+
+    .Mar {
+        font-size: 30px;
+    }
+
+    .developer,
+    .desarrollo,
+    .diseño,
+    .tool {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .media {
+        padding-left: 0;
+    }
+
+    .textPages {
+        text-align: center;
+    }
+
+    .text {
+        width: auto;
+    }
+
+    .media780 {
+        margin: 0 50px 0 50px;
+        padding: 0 20px 0 20px;
+        height: 1420px;
+    }
+
+    img {
+        max-width: 50%;
+        height: auto;
+    }
+
+    img.icon {
+        width: 95px;
+        height: 50px;
+        padding-bottom: 0;
+    }
+  
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .gmail,
+    .whatsapp,
+    .instagram {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .buttonServicios:hover, .buttonClientes:hover, .buttonAcerca:hover {
+        height: 50px;
+        width: 120px;
+    }
+
+    .servicios, .contacto {
+        margin-top: 20px;
+    }
+
+    .formularioContacto {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+}
+
+
+
+@media (max-width: 780px){
+    .Mar {
+        font-size: 25px;
+        padding-left: 20px;
+    }
+
+    .media780 {
+        margin: 0 50px 0 50px;
+        padding: 0 20px 0 20px;
+        height: 1500px;
+    }
+}
+
+@media (max-width: 380px) {
+    .media780 {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .pie {
+        text-align: center;
+    }
+}

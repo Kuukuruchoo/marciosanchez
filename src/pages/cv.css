@@ -1,0 +1,165 @@
+body {
+    background-color: black;
+}
+
+.totalLayout {
+    background-color: rgba(0, 0, 0, 97%);
+    height: 770px;
+    margin: 50px 20% 50px 20%;
+    border-radius: 3rem;
+}
+
+video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 40%;
+}
+
+.totalLayout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/*apartados*/
+
+.digitalMind,
+.cursosDigitales,
+.BAMultiplica {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 2px solid white; /* Optional: Add borders for better visualization */
+    margin: 60px 20px;
+    height: 520px;
+    border-radius: 2rem;
+}
+
+.digitalMind {
+    margin-left: 30px;
+}
+.BAMultiplica {
+    margin-right: 30px;
+}
+
+.digitalMind:hover,
+.BAMultiplica:hover {
+    margin: 30px;
+    transition: .2s;
+    border-radius: 3rem;
+    border: 3px solid rgb(40, 225, 219);
+    background-color: rgba(141, 111, 163, 70%);
+}
+
+.cursosDigitales:hover{
+    margin: 25px;
+    transition: .2s;
+    border-radius: 3rem;
+    border: 3px solid rgb(40, 225, 219);
+    background-color: rgba(141, 111, 163, 70%);
+}
+
+.digitalMind img,
+.cursosDigitales img,
+.BAMultiplica img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.BAMultiplica img {
+    border-radius: 2rem;
+}
+
+.digitalMind {
+    padding-top: 5px;
+}
+
+.digital {
+    padding-top: 15px;
+}
+
+.cvPage {
+    padding-left: 0;
+}
+
+.textPagesMain {
+    font-size: 25px;
+    color: white;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.expandido {
+    margin-top: 10px;
+    padding-left: 0;
+}
+
+/*curriculum*/
+.curriculum {
+    /* Your curriculum div styles */
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.textMain {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+.buttonCurriculum {
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    height: 45px;
+    padding-top: 10px;
+    color: white;
+    background-color: rgb(124, 129, 123);
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 1rem;
+}
+
+.buttonCurriculum:hover {
+    background-color: #3DD52E;
+    transition: .1s;
+ }
+
+.buttonPDF {
+    width: 150px;
+    height: 40px;
+    padding-top: 8px;
+    color: white;
+    background-color: rgb(124, 129, 123);
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 1rem;
+}
+
+.buttonPDF:hover {
+   background-color: #3DD52E;
+   transition: .1s;
+}

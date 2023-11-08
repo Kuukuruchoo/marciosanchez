@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcio L. Sanchez</title>
+    <link rel="web icon" type="png" href="../src/img/icecream.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Teko:wght@300&family=Ysabeau+SC&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="src/build/style.css">
+    <link rel="stylesheet" href="src/build/Center.css">
+    <link rel="stylesheet" href="src/build/Tabs.css">
+    <link rel="stylesheet" href="src/build/Header.css">
+    <link rel="stylesheet" href="src/build/Media.css">
+</head>
+
+<body>
+    <div class="totalLayout">
+        <header>
+            <a class="icon-bar" href="index.html" ><img class="icon" src="src/img/icecream.png"></a>
+            <main><a href="src/pages/cv.html" class="Mar">Marcio L. Sanchez</a></main>
+        </header>
+        <div class="center">
+            <div class="fondo"><img class="background" src="src/img/fondo.jpg"></div>
+            <div class="textoCentro media780">
+                <div class="tabs">
+                    <span class="text">
+                        <p>Creaciones Web: Mi Trayectoria</p>
+                    </span>
+                    <div class="buttons">
+                        <button type="button" class="buttonServicios">Servicios</button>
+                        <button type="button" class="buttonClientes">Clientes</button>
+                        <button type="button" class="buttonAcerca">Contacto</button>
+                    </div>
+                </div>
+                <div class="servicios">
+                    <div class="developer">
+                        <img src="src/img/developer.png">
+                        <p class="textPages media">FullStack Developer. JavaScript, PHP, SqlServer, Laragon, ViteJs</p>
+                    </div>
+                    <div class="desarrollo">
+                        <img src="src/img/desarrollo.png">
+                        <p class="textPages media">Desarrollo de páginas Web, Aplicacioes Web y Sistemas Complejos de Gestión
+                        </p>
+                    </div>
+                    <div class="diseño">
+                        <img src="src/img/diseño.png">
+                        <p class="textPages media">Diseños modernos, cómodos e intuitivos</p>
+                    </div>
+                    <div class="tool">
+                        <img src="src/img/toolIcon.png">
+                        <p class="textPages media">Servicio y asesoramiento técnico, redes y conexiones, hardware</p>
+                    </div>
+                </div>
+                <div class="clientes">
+                </div>
+                <div class="acercaDeMi">
+                    <div class="gmail">
+                        <img src="src/img/mailverde.png">
+                        <p class="textPages media  media">marciolsanchez@gmail.com</p>
+                    </div>
+                    <div class="whatsapp">
+                        <img src="src/img/whatsapp.png">
+                        <p class="textPages media">+54 9 3446300334</p>
+                    </div>
+                    <div class="instagram">
+                        <img src="src/img/instagram.png">
+                        <p class="textPages media">@marcio__sanchez</p>
+                    </div>
+                    <div class="formularioContacto">
+                        <form class="formulario" action="#" method="POST">
+                            <legend>Contáctame</legend>
+                            <div class="contenedor-campos">
+                                <div class="campo">
+                                    <input type="text" name="nombre" placeholder="Nombre" required>
+                                </div>
+                                <div class="campo">
+                                    <input type="tel" name="telefono" placeholder="Teléfono" required>
+                                </div>
+                                <div class="campo w-100">
+                                    <input type="mail" name="correo" placeholder="Mail">
+                                </div>
+                                <div class="campo w-100">
+                                    <label>Mensaje:</label>
+                                    <textarea></textarea>
+                                </div>
+                            </div>
+                            <div class="enviar">
+                                <input class="boton" type="submit" value="Enviar">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <p class="pie">@Marcio Leonel Sanchez 2023</p>
+            </div>
+        </div>
+    </div>
+    <script src="src/scripts/script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const form = document.querySelector('.formulario');
+            form.addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                const nombre = form.querySelector('input[name="nombre"]').value;
+                const telefono = form.querySelector('input[name="telefono"]').value;
+                const correo = form.querySelector('input[name="correo"]').value;
+                const mensaje = form.querySelector('textarea').value;
+
+                const destinatario = 'marciolsanchez@gmail.com';
+                const asunto = 'Mensaje de contacto';
+                const cuerpo = `Nombre: ${nombre}%0ATeléfono: ${telefono}%0ACorreo: ${correo}%0AMensaje: ${mensaje}`;
+
+                const mailtoURL = `mailto:${destinatario}?subject=${asunto}&body=${cuerpo}`;
+
+                window.location.href = mailtoURL;
+            });
+        });
+    </script>
+</body>
+
+</html>
